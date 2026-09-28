@@ -1,0 +1,15 @@
+{
+  "name": "claude-hubstaff",
+  "owner": {
+    "name": "Ruslan Kaihorodov",
+    "url": "https://github.com/Killerkiss"
+  },
+  "description": "Hubstaff time tracking for Claude Code.",
+  "plugins": [
+    {
+      "name": "hubstaff",
+      "source": "./plugins/hubstaff",
+      "description": "Start, stop and switch the Hubstaff timer by project, task or Jira key from Claude Code."
+    }
+  ]
+}

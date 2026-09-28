@@ -1,0 +1,29 @@
+{
+  "name": "hubstaff",
+  "displayName": "Hubstaff",
+  "version": "0.1.0",
+  "description": "Start, stop and switch the Hubstaff timer by project, task or tracker key (e.g. Jira) from Claude Code.",
+  "author": {
+    "name": "Ruslan Kaihorodov",
+    "url": "https://github.com/Killerkiss"
+  },
+  "homepage": "https://github.com/Killerkiss/claude-hubstaff",
+  "repository": "https://github.com/Killerkiss/claude-hubstaff",
+  "license": "MIT",
+  "keywords": ["hubstaff", "time-tracking", "timer", "jira", "mcp"],
+  "userConfig": {
+    "hubstaff_token": {
+      "type": "string",
+      "title": "Hubstaff personal access token (optional)",
+      "description": "Lets the plugin look tasks up by key through the Hubstaff API when the desktop app's local cache doesn't have them. Create one at https://developer.hubstaff.com/personal_access_tokens. Leave empty to use only the desktop app.",
+      "required": false,
+      "sensitive": true
+    },
+    "hubstaff_cli_path": {
+      "type": "file",
+      "title": "Hubstaff CLI path (optional)",
+      "description": "Full path to HubstaffCLI if the desktop app is installed somewhere non-standard.",
+      "required": false
+    }
+  }
+}
