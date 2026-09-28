@@ -10,6 +10,9 @@ Tracking: Website → Fix checkout rounding bug (task id 1654321)
 
 > what am I tracking?
 > stop
+> /hubstaff:start PROJ-716   # start or switch by key
+> /hubstaff:status
+> /hubstaff:stop
 > /hubstaff:track            # pick project → task
 > /hubstaff:track invoice    # start the task whose title matches
 ```
@@ -64,7 +67,16 @@ The plugin adds an MCP server named `hubstaff`:
 | `stop`      | Stop the timer                                                             |
 | `resume`    | Resume the last project/task                                               |
 
-Plus the `/hubstaff:track [key | words | stop | resume | status]` skill.
+Commands:
+
+| Command | What it does |
+| --- | --- |
+| `/hubstaff:status` | What is tracking now |
+| `/hubstaff:start <key \| id \| words>` | Start (or switch to) a task |
+| `/hubstaff:stop` | Stop the timer |
+| `/hubstaff:track [key \| words \| stop \| resume \| status]` | Pick a project and task from lists, or any of the above |
+
+You can also just ask in plain words: "start PROJ-743", "stop", "what am I tracking?".
 
 ## How it finds tasks
 
